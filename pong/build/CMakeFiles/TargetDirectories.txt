@@ -1,0 +1,3 @@
+/home/atyeb/Projects/my_raylib_game/build/CMakeFiles/MyRaylibGame.dir
+/home/atyeb/Projects/my_raylib_game/build/CMakeFiles/edit_cache.dir
+/home/atyeb/Projects/my_raylib_game/build/CMakeFiles/rebuild_cache.dir

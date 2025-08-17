@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/atyeb/Projects/my_raylib_game/build",
+  "command": "/usr/bin/c++   -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles/MyRaylibGame.dir/src/main.cpp.o -c /home/atyeb/Projects/my_raylib_game/src/main.cpp",
+  "file": "/home/atyeb/Projects/my_raylib_game/src/main.cpp",
+  "output": "CMakeFiles/MyRaylibGame.dir/src/main.cpp.o"
+}
+]

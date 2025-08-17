@@ -1,0 +1,54 @@
+#ifndef IMAGE_H
+#define IMAGE_H
+#include <raylib.h>
+    extern Font pixel;
+    extern Texture2D playersprite;
+    extern Texture2D bulletsprite;
+    extern Texture2D enemysprite;
+    extern Texture2D invincibilesprite;
+    extern Texture2D enemyhit;
+    extern Texture2D grass; 
+    extern Texture2D heart;
+    extern Texture2D heartanim;
+    extern Texture2D grass2;
+    extern Texture2D grass3;
+    extern Texture2D grass4;
+    extern Texture2D cursor;
+    extern Texture2D menucurs;
+    extern Texture2D gun;
+    extern Texture2D gun2;
+    extern Texture2D portal;
+    extern Texture2D portalred;
+    extern Texture2D portalselected;
+    extern Texture2D castletile;
+    extern Texture2D castletile2;
+    extern Texture2D castleguard;
+    extern Texture2D castleguardhit;
+    extern Texture2D magma;
+    extern Texture2D magmahit;
+    extern Texture2D magmatile;
+    extern Texture2D coinsprite;
+    extern Texture2D diamondsprite;
+    extern Texture2D silversprite;
+    extern Texture2D shopsprite;
+    extern Texture2D healthplusspr;
+    extern Texture2D cardselect;
+    extern Texture2D carddesc;
+    extern Texture2D riflecardspr;
+    extern Texture2D riflesprite;
+    extern Texture2D riflesprite2;
+    extern Texture2D refillriflecard;
+    extern Sound bulletshoot;
+    extern Sound bulletshoot2;
+    extern Sound bulletshoot3;
+    extern Sound hit;
+    extern Sound hit2;
+    extern Sound hurt;
+    extern Sound enemydeath;
+    extern Sound coinpickup;
+    extern Sound powerup;
+    extern Sound nomoney;
+    extern Sound selectsound;
+    extern Sound cardsound;
+    void LoadGameTextures();
+#endif

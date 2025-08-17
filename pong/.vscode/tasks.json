@@ -1,0 +1,34 @@
+// .vscode/tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with CMake",
+            "type": "shell",
+            "command": "cmake --build build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [], // Keep this empty as we discussed
+            "detail": "Runs CMake build in the 'build' directory"
+        },
+        {
+            "label": "Run Raylib Game", // NEW: Name of the task
+            "type": "shell",             // NEW: We're running a shell command
+            "command": "./build/my_raylib_game", // NEW: The command to execute your game
+            "options": {
+                "cwd": "${workspaceFolder}" // NEW: Important! Run command from project root
+            },
+            "group": "build", // NEW: Associate with build group (optional)
+            "presentation": {
+                "reveal": "always",     // NEW: Always show the terminal when running
+                "panel": "new"          // NEW: Open in a new terminal panel
+            },
+            "dependsOn": [              // NEW: Make this task depend on the "Build with CMake" task
+                "Build with CMake"      //       This means it will build BEFORE it tries to run
+            ],
+            "detail": "Runs the compiled Raylib game executable."
+        }
+    ]
+}

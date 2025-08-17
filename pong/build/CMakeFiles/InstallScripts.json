@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/atyeb/Projects/my_raylib_game/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

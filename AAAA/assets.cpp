@@ -1,0 +1,114 @@
+#include "headers/assets.h"
+#include <raylib.h>
+// Define the textures
+Font pixel;
+Texture2D playersprite;
+Texture2D bulletsprite;
+Texture2D enemysprite;
+Texture2D invincibilesprite;
+Texture2D enemyhit;
+Texture2D grass;
+Texture2D grass2;
+Texture2D grass3;
+Texture2D grass4;
+Texture2D cursor;
+Texture2D heart;
+Texture2D menucurs;
+Texture2D gun;
+Texture2D gun2;
+Texture2D portal;
+Texture2D portalred;
+Texture2D portalselected;
+Texture2D castletile;
+Texture2D castletile2;
+Texture2D castleguard;
+Texture2D castleguardhit;
+Texture2D magma;
+Texture2D magmahit;
+Texture2D magmatile;
+Texture2D coinsprite;
+Texture2D diamondsprite;
+Texture2D silversprite;
+Texture2D shopsprite;
+Texture2D healthplusspr;
+Texture2D cardselect;
+Texture2D carddesc;
+Texture2D riflecardspr;
+Texture2D riflesprite;
+Texture2D riflesprite2;
+Texture2D refillriflecard;
+Sound cardsound;
+Sound selectsound;
+Sound nomoney;
+Sound powerup;
+Sound bulletshoot;
+Sound bulletshoot2;
+Sound bulletshoot3;
+Sound hit;
+Sound hit2;
+Sound hurt;
+Sound enemydeath;
+Sound coinpickup;
+
+void LoadGameTextures() {
+    pixel = LoadFont("images/PixelPurl.ttf");
+
+    playersprite = LoadTexture("images/screenshot000.png");
+    bulletsprite = LoadTexture("images/bullet.png");
+    enemysprite = LoadTexture("images/enemy.png");
+    invincibilesprite = LoadTexture("images/playerhit.png");
+    enemyhit = LoadTexture("images/enemyhit.png");
+    grass = LoadTexture("images/grass.png");
+    heart = LoadTexture("images/heart1.png");
+    grass2 = LoadTexture("images/grass2.png");
+    grass3= LoadTexture("images/grass3.png");
+    grass4 = LoadTexture("images/grass4.png");
+    cursor = LoadTexture("images/cursor.png");
+    menucurs = LoadTexture("images/menucurs.png");
+    gun = LoadTexture("images/gun.png");
+    gun2 = LoadTexture("images/gun2.png");
+    portal = LoadTexture("images/portal.png");
+    portalred = LoadTexture("images/portalred.png");
+    portalselected = LoadTexture("images/portalselected.png");
+    castletile = LoadTexture("images/castleground.png");
+    castletile2 = LoadTexture("images/castleground2.png");
+    castleguard = LoadTexture("images/castleguard.png");
+    castleguardhit = LoadTexture("images/castleguardhit.png");
+    magma = LoadTexture("images/magma.png");
+    magmahit = LoadTexture("images/magmahit.png");
+    magmatile = LoadTexture("images/magmafloor.png");
+    coinsprite = LoadTexture("images/coin.png");
+    diamondsprite = LoadTexture("images/diamondcoin.png");
+    silversprite = LoadTexture("images/silvercoin.png");
+    shopsprite = LoadTexture("images/shop.png");
+    healthplusspr = LoadTexture("images/health++.png");
+    cardselect = LoadTexture("images/cardselect.png");
+    carddesc = LoadTexture("images/carddesc.png");
+    riflecardspr = LoadTexture("images/rifelcard.png");
+    riflesprite = LoadTexture("images/riflesprite.png");
+    riflesprite2 = LoadTexture("images/riflesprite2.png");
+    refillriflecard = LoadTexture("refillriflecard.png");
+    //sounds
+    bulletshoot = LoadSound("sounds/bulletshoot.wav");
+    bulletshoot2 = LoadSound("sounds/bulletshoot2.wav");
+    bulletshoot3 = LoadSound("sounds/bulletshoot3.wav");
+    hit = LoadSound("sounds/hit.wav");
+    hit2 = LoadSound("sounds/hit2.wav");
+    hurt = LoadSound("sounds/hurt.wav");
+    enemydeath = LoadSound("sounds/enemydeath.wav");
+    coinpickup = LoadSound("sounds/pickupCoin.wav");
+    nomoney = LoadSound("sounds/broke.wav");
+    powerup = LoadSound("sounds/powerup.wav");
+    selectsound = LoadSound("sounds/selectsound.wav");
+    cardsound = LoadSound("sounds/carddraw.mp3");
+
+}
+
+void UnloadGameTextures() {
+    UnloadTexture(playersprite);
+    UnloadTexture(bulletsprite);
+    UnloadTexture(enemysprite);
+    UnloadTexture(invincibilesprite);
+    UnloadTexture(enemyhit);
+    UnloadTexture(grass);
+}

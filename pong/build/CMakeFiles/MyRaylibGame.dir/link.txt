@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/MyRaylibGame.dir/link.d CMakeFiles/MyRaylibGame.dir/src/main.cpp.o -o MyRaylibGame   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib -lraylib -lGL -lrt -lm -lpthread -ldl

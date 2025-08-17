@@ -1,0 +1,2 @@
+/home/atyeb/Projects/block breaker/build/CMakeFiles/edit_cache.dir
+/home/atyeb/Projects/block breaker/build/CMakeFiles/rebuild_cache.dir
