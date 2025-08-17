@@ -11,7 +11,7 @@ class Enemy{
     Vector2 size;
     Vector2 position = {0,0};
     Vector2 dir = {0,0};
-    bool alive = false;
+    bool alive = true;
     bool hit = false;
     float hittime = 0;
     Enemy(int damage, int health, int speed, Texture2D* texture, Texture2D* texturehit,Vector2 size, Vector2 position = {0,0}, Vector2 dir = {0,0}, bool alive = true, bool hit = false, float hittime = 0){

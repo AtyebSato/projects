@@ -87,7 +87,7 @@ void LoadGameTextures() {
     riflecardspr = LoadTexture("images/rifelcard.png");
     riflesprite = LoadTexture("images/riflesprite.png");
     riflesprite2 = LoadTexture("images/riflesprite2.png");
-    refillriflecard = LoadTexture("refillriflecard.png");
+    refillriflecard = LoadTexture("images/refillriflecard.png");
     //sounds
     bulletshoot = LoadSound("sounds/bulletshoot.wav");
     bulletshoot2 = LoadSound("sounds/bulletshoot2.wav");
@@ -105,10 +105,53 @@ void LoadGameTextures() {
 }
 
 void UnloadGameTextures() {
+    UnloadFont(pixel);
     UnloadTexture(playersprite);
     UnloadTexture(bulletsprite);
     UnloadTexture(enemysprite);
     UnloadTexture(invincibilesprite);
     UnloadTexture(enemyhit);
     UnloadTexture(grass);
+    UnloadTexture(grass2);
+    UnloadTexture(grass3);
+    UnloadTexture(grass4);
+    UnloadTexture(heart);
+    UnloadTexture(cursor);
+    UnloadTexture(menucurs);
+    UnloadTexture(gun);
+    UnloadTexture(gun2);
+    UnloadTexture(portal);
+    UnloadTexture(portalred);
+    UnloadTexture(portalselected);
+    UnloadTexture(castletile);
+    UnloadTexture(castletile2);
+    UnloadTexture(castleguard);
+    UnloadTexture(castleguardhit);
+    UnloadTexture(magma);
+    UnloadTexture(magmahit);
+    UnloadTexture(magmatile);
+    UnloadTexture(coinsprite);
+    UnloadTexture(diamondsprite);
+    UnloadTexture(silversprite);
+    UnloadTexture(shopsprite);
+    UnloadTexture(healthplusspr);
+    UnloadTexture(cardselect);
+    UnloadTexture(carddesc);
+    UnloadTexture(riflecardspr);
+    UnloadTexture(riflesprite);
+    UnloadTexture(riflesprite2);
+    UnloadTexture(refillriflecard);
+
+    UnloadSound(bulletshoot);
+    UnloadSound(bulletshoot2);
+    UnloadSound(bulletshoot3);
+    UnloadSound(hit);
+    UnloadSound(hit2);
+    UnloadSound(hurt);
+    UnloadSound(enemydeath);
+    UnloadSound(coinpickup);
+    UnloadSound(nomoney);
+    UnloadSound(powerup);
+    UnloadSound(selectsound);
+    UnloadSound(cardsound);
 }
